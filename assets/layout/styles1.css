@@ -8,7 +8,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 h1 {
-  font-size: 50px;
+  font-size: 45px;
   word-spacing: 10px;
 }
 picture {
@@ -34,16 +34,19 @@ nav a {
   background-color: black;
   color: white;
   border: 1px solid black;
-  padding: 8px 20px;
+  padding: 8px 15px;
   margin: 7px;
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: bold;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   transition: all 1s;
 }
-nav a:hover, nav a[href="#"] {
+nav a:hover,
+nav a[href="#"] {
   background-color: rgb(248, 216, 36);
   color: black;
-  border:  rgb(248, 216, 36);
+  border: rgb(248, 216, 36);
+  font-size: 14px;
 }
 
 main {
@@ -54,33 +57,42 @@ main h2 {
   color: white;
   text-align: center;
   padding: 10px;
+  font-size: 30px;
 }
 .container {
-  display: grid;
-  grid-template-columns: 25% 45% 30%;
-  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .logo {
-  padding-top: 80px;
-  padding-left: 5px;
   position: relative;
+  flex-basis: 20%;
+  padding-top: 100px;
+  padding-left: 50px;
 }
+section {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  flex-basis: 52%;
+  padding-top: 50px;
+}
+.img-secundaria {
+  flex-basis: 20%;
+  padding-top: 80px;
+}
+article {
+  margin: 25px;
+}
+article h3 {
+  margin-bottom: 5px;
+}
+
 .logo-about,
 .img-about {
   position: sticky;
   top: 0;
-}
-section {
-  font-size: 26px;
-  padding-top: 50px;
-  font-family: "Raleway", sans-serif;
-}
-article {
-  margin: 20px;
-}
-.img-secundaria {
-  padding-left: 20px;
-  padding-top: 90px;
 }
 #section-contact {
   align-self: center;
@@ -91,6 +103,62 @@ article {
 #section-contact p {
   margin: 10px;
 }
+.titulo-rules-gameInfo {
+  width: 100%;
+  padding: 0px;
+  flex-basis: 100%;
+  font-size: 20px;
+}
+.titulo-rules-gameInfo p {
+  text-align: center;
+  margin-top: 10px;
+}
+.section-rules * {
+  font-size: 18px;
+  margin-top: 10px;
+}
+li {
+  list-style-position: inside;
+}
+.listas-rules ol li ol li {
+  list-style-type: lower-alpha;
+}
+span {
+  font-weight: bold;
+}
+th {
+  background-color: black;
+  color: white;
+}
+
+table {
+  width: 55vw;
+  border: 2px solid black;
+  text-align: center;
+  margin-left: 15px;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+tr:hover {
+  background-color: rgb(248, 216, 36);
+}
+
+.gameInfo-lista {
+  flex-basis: 100%;
+}
+.gameInfo-lista dl {
+  display: flex;
+  flex-direction: column;
+}
+
+.gameInfo-lista dt {
+  font-weight: bold;
+  padding: 10px;
+}
+
 footer {
   text-align: center;
   height: 50px;
