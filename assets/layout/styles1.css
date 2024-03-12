@@ -142,7 +142,8 @@ td {
   border: 1px solid black;
   padding: 1rem;
 }
-tr:hover {
+tbody tr:nth-child(odd):hover,
+tbody tr:nth-child(odd):hover + tr{
   background-color: rgb(248, 216, 36);
 }
 
