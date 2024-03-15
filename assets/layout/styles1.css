@@ -246,6 +246,7 @@ input[type="number"] {
   border: none;
   outline: none;
   border-bottom: 1px solid black;
+  font-size: 16px;
 }
 
 input[type="date"] {
@@ -258,6 +259,7 @@ input[type="date"] {
 input[type="checkbox"] {
   height: 15px;
   width: 15px;
+  margin: 5px;
 }
 
 .closestSchool label {
@@ -284,8 +286,8 @@ input[type="checkbox"] {
   font-size: 14px;
 }
 .permision-toPlay label:first-of-type {
-  background-color: rgb(248, 216, 36, 0.5);
   padding: 5px;
+  margin-top: 15px;
 }
 .permision-toPlay label:nth-last-child() {
   display: block;
